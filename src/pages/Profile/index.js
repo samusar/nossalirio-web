@@ -17,7 +17,8 @@ export default function Profile(){
     const ministrieName = localStorage.getItem('ministrieName');
 
     function linkCadastro(){
-        if(ministrieId === '6c1444d7'){
+        // Só vai aparecer para a secretária da igreja
+        if(ministrieId === '9884f8ca'){
             return (<Link className="back-link" to="/register">
                         <FiLogIn size={16} color="#E02041" />
                         Cadastrar um novo Ministério
